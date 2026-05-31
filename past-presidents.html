@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Honoring the past presidents of Navakerala Malayali Association who have led our community through the years.">
+    <title>Past Presidents - NAVAKERALA</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23c41e3a'/><text x='50' y='65' font-size='40' text-anchor='middle' fill='%23d4a012' font-family='serif' font-weight='bold'>NK</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .presidents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .president-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .president-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        .president-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: top;
+        }
+        .president-card .card-info {
+            padding: 20px 15px;
+        }
+        .president-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+        .president-card .year {
+            display: inline-block;
+            background: var(--kerala-green);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .president-card .memorial {
+            font-size: 0.8rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 8px;
+        }
+        .decade-section {
+            margin-bottom: 60px;
+        }
+        .decade-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--kerala-green);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--kerala-gold);
+            display: inline-block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <a href="tel:+19546967872"><i class="fas fa-phone"></i> +1 516 603 5150</a>
+                    <a href="mailto:infonavakerala@gmail.com"><i class="fas fa-envelope"></i> infonavakerala@gmail.com</a>
+                    <!-- <a href="/cdn-cgi/l/email-protection#e48d8a828b8a8592858f8196858885a48389858d88ca878b89"><i class="fas fa-envelope"></i> <span class="__cf_email__" data-cfemail="4b22252d24252a3d2a202e392a272a0b2c262a222765282426">[email&#160;protected]</span></a> -->
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/navakerala.malayaliassociation" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/nava_kerala" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpeg" alt="Navakerala Logo" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                    <div class="logo-text">
+                        <h1>NAVAKERALA</h1>
+                        <span>Malayali Association</span>
+                    </div>
+                </a>
+                
+                <div class="menu-toggle"><span></span><span></span><span></span></div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown active">
+                        <a href="committee.html">Committee <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 5px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="committee.html">Executive Committee</a></li>
+                            <li><a href="tejaswini.html">Tejaswini - Women's Forum</a></li>
+                            <li><a href="navakerala-kids.html">Navakerala Kids</a></li>
+                            <li><a href="navakerala-youth.html">Navakerala Youth</a></li>
+                            <li><a href="past-presidents.html">Past Presidents</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+    <a href="activities.html">Activities <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 5px;"></i></a>
+    <ul class="dropdown-menu">
+        <li><a href="activities.html">All Activities</a></li>
+    </ul>
+</li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/kerala-bg-2.jpg') center/cover no-repeat;">
+        <div class="container">
+            <h1>Past Presidents</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Past Presidents</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Presidents Section -->
+    <section class="committee" style="padding: 80px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Honoring Our Leaders</h2>
+                <p>The visionary leaders who have guided Navakerala through the years</p>
+            </div>
+
+            <!-- 2020s -->
+            <!-- 2020s -->
+<div class="decade-section">
+    <h3 class="decade-title">2020s</h3>
+    <div class="presidents-grid">
+        <div class="president-card">
+            <img src="images/simon.jpeg" alt="Simon Parathazham" style="object-fit: cover; object-position: center;">
+            <div class="card-info">
+                <h4>Simon Parathazham</h4>
+                <span class="year">2025</span>
+            </div>
+        </div>
+        
+        <div class="president-card">
+            <img src="images/susheel.jpeg" alt="Susheel Nalakath" style="object-fit: cover; object-position: center;">
+            <div class="card-info">
+                <h4>Susheel Nalakath</h4>
+                <span class="year">2024</span>
+            </div>
+        </div>
+        
+        <div class="president-card">
+            <img src="images/shibu.jpeg" alt="Shibu Scaria" style="object-fit: cover; object-position: center;">
+            <div class="card-info">
+                <h4>Shibu Scaria</h4>
+                <span class="year">2023</span>
+            </div>
+        </div>
+        
+        <div class="president-card">
+                        <img src="images/jain.jpeg" alt="Jain Vathielil" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Jain Vathielil</h4>
+                            <span class="year">2021</span>
+                        </div>
+                    </div>
+                    
+                    </div>
+            </div>
+
+            <!-- 2010s -->
+            <div class="decade-section">
+                <h3 class="decade-title">2010s</h3>
+                <div class="presidents-grid">
+                    <div class="president-card">
+                        <img src="images/jobi.jpeg" alt="Jobi Ponnumpurayidam" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Jobi Ponnumpurayidam</h4>
+                            <span class="year">2018</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/suresh.jpeg" alt="Suresh Nair" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Suresh Nair</h4>
+                            <span class="year">2017</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/james.jpeg" alt="James Pulickal" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>James Pulickal</h4>
+                            <span class="year">2016</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/aby.jpeg" alt="Aby Anand" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Aby Anand</h4>
+                            <span class="year">2015</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/reji.jpeg" alt="Reji Thomas" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Reji Thomas</h4>
+                            <span class="year">2014</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/bijoyabraham.jpeg" alt="Bijoy Abraham" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Bijoy Abraham</h4>
+                            <span class="year">2013</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/sheela.jpeg" alt="Sheela Jose" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Sheela Jose</h4>
+                            <span class="year">2012</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/saju.jpeg" alt="Saju Vadakkel" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Saju Vadakkel</h4>
+                            <span class="year">2011</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/mary.jpeg" alt="Mary Nicholas" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Mary Nicholas</h4>
+                            <span class="year">2010</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2000s -->
+            <div class="decade-section">
+                <h3 class="decade-title">2000s</h3>
+                <div class="presidents-grid">
+                    <div class="president-card">
+                        <img src="images/gigi.jpeg" alt="Late Adv. Gigi Neelathumookil" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Adv. Gigi Neelathumookil</h4>
+                            <span class="year">2009</span>
+                            <p class="memorial"><i class="fas fa-dove"></i> In Loving Memory</p>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/thomas.jpeg" alt="Late Mr. A.M Thomas" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Mr. A.M Thomas</h4>
+                            <span class="year">2008</span>
+                            <p class="memorial"><i class="fas fa-dove"></i> In Loving Memory</p>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/joseph.jpeg" alt="Joseph Panikulankara" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Joseph Panikulankara</h4>
+                            <span class="year">2007</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/john.jpeg" alt="John Onnonny" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>John Onnonny</h4>
+                            <span class="year">2006</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/antony.jpeg" alt="Antony Thomas" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Antony Thomas</h4>
+                            <span class="year">2005</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/lukose.jpeg" alt="Lukose Painumkal" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Lukose Painumkal</h4>
+                            <span class="year">2004</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/mathew.jpeg" alt="Mathew Varghese" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Mathew Varghese</h4>
+                            <span class="year">2003</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/babu.jpeg" alt="Babu Chakiath" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Babu Chakiath</h4>
+                            <span class="year">2002</span>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="president-card">
+                        <img src="images/anandan.jpeg" alt="Anandan Niravel" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Anandan Niravel</h4>
+                            <span class="year">2001</span>
+                        </div>
+                    </div> -->
+                    
+                    <div class="president-card">
+    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #e0e0e0 0%, #c0c0c0 100%); display: flex; align-items: center; justify-content: center; flex-direction: column; color: #666;">
+        <i class="fas fa-user" style="font-size: 4rem; margin-bottom: 10px; opacity: 0.5;"></i>
+        <span style="font-size: 0.85rem;">Omanakuttan Nair</span>
+    </div>
+    <div class="card-info">
+        <h4>Omanakuttan Nair</h4>
+        <span class="year">2000</span>
+    </div>
+</div>
+                </div>
+            </div>
+
+            <!-- 1990s -->
+            <div class="decade-section">
+                <h3 class="decade-title">1990s</h3>
+                <div class="presidents-grid">
+                    <div class="president-card">
+                        <img src="images/vincent.jpeg" alt="Vincent Lukose" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Vincent Lukose</h4>
+                            <span class="year">1999</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/josephaugusty.jpeg" alt="Joseph Augusty" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Joseph Augusty</h4>
+                            <span class="year">1998</span>
+                        </div>
+                    </div>
+                    
+                    <div class="president-card">
+                        <img src="images/nicholas.jpeg" alt="Late Nicholas Varghese" style="object-fit: cover; object-position: center;">
+                        <div class="card-info">
+                            <h4>Nicholas Varghese</h4>
+                            <span class="year">1997</span>
+                            <p class="memorial"><i class="fas fa-dove"></i> In Loving Memory</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legacy Note -->
+            <div style="text-align: center; margin-top: 60px; padding: 40px; background: var(--cream); border-radius: 15px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <i class="fas fa-heart" style="font-size: 2.5rem; color: var(--kerala-green); margin-bottom: 20px;"></i>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 15px; color: var(--text-dark);">A Legacy of Leadership</h3>
+                <p style="color: #666; font-size: 1.1rem; line-height: 1.8;">Since 1997, Navakerala has been blessed with dedicated leaders who have worked tirelessly to build and strengthen our community. Each president has contributed to making Navakerala the vibrant organization it is today. We are forever grateful for their service and dedication to the Malayali community in South Florida.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Navakerala</h3>
+                    <p>A non-profit 501(c)(3) community organization dedicated to preserving Kerala's rich cultural heritage in South Florida.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="committee.html">Committee</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="tejaswini.html">Tejaswini - Women's Forum</a></li>
+                        <li><a href="navakerala-kids.html">Navakerala Kids</a></li>
+                        <li><a href="navakerala-youth.html">Navakerala Youth</a></li>
+                        <li class="dropdown">
+    <a href="activities.html">Activities <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 5px;"></i></a>
+    <ul class="dropdown-menu">
+        <li><a href="activities.html">All Activities</a></li>
+    </ul>
+</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    
+                    <p><i class="fas fa-phone"></i> +1 516-603-5150</p>
+                    <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e980878f8687889f88828c9b888588a98e84888085c78a8684">[email&#160;protected]</a></p>
+                    <div class="social-links"> <a href="https://www.facebook.com/navakerala.malayaliassociation" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://www.instagram.com/nava_kerala" target="_blank"><i class="fab fa-instagram"></i></a> </div>
+       

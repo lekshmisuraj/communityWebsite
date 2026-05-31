@@ -1,0 +1,8 @@
+# Robots.txt for Navakerala Malayali Association
+# https://navakeralafl.org
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://navakeralafl.org/sitemap.xml
